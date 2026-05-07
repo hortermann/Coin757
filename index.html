@@ -1,0 +1,262 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transition Metals – Professional Mutilated Coin & Off-Sort Redemption</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1a1a1a; background: #fff; }
+
+    /* NAV */
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 48px; border-bottom: 1px solid #e5e7eb; background: #fff; position: sticky; top: 0; z-index: 100; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-icon { width: 36px; height: 36px; border-radius: 8px; background: #185FA5; display: flex; align-items: center; justify-content: center; }
+    .logo-icon svg { width: 20px; height: 20px; fill: white; }
+    .nav-brand { font-size: 16px; font-weight: 600; color: #1a1a1a; }
+    .nav-brand span { color: #185FA5; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { font-size: 14px; color: #555; text-decoration: none; }
+    .nav-links a:hover { color: #185FA5; }
+    .nav-cta { background: #185FA5; color: white; border: none; border-radius: 6px; padding: 9px 20px; font-size: 14px; cursor: pointer; font-weight: 500; }
+    .nav-cta:hover { background: #0C447C; }
+
+    /* HERO */
+    .hero { background: #E6F1FB; padding: 72px 48px 64px; display: flex; align-items: center; justify-content: space-between; gap: 48px; }
+    .hero-text { max-width: 500px; }
+    .hero-badge { display: inline-block; background: white; border: 1px solid #B5D4F4; color: #185FA5; font-size: 12px; padding: 5px 12px; border-radius: 20px; margin-bottom: 20px; }
+    .hero h1 { font-size: 36px; font-weight: 700; color: #042C53; line-height: 1.3; margin-bottom: 16px; }
+    .hero p { font-size: 16px; color: #185FA5; line-height: 1.7; margin-bottom: 28px; }
+    .hero-btns { display: flex; gap: 12px; }
+    .btn-primary { background: #185FA5; color: white; border: none; border-radius: 8px; padding: 12px 24px; font-size: 15px; font-weight: 500; cursor: pointer; }
+    .btn-primary:hover { background: #0C447C; }
+    .btn-outline { background: transparent; color: #185FA5; border: 1.5px solid #378ADD; border-radius: 8px; padding: 12px 24px; font-size: 15px; font-weight: 500; cursor: pointer; }
+    .btn-outline:hover { background: #E6F1FB; }
+    .hero-stats { display: flex; flex-direction: column; gap: 14px; flex-shrink: 0; }
+    .stat-card { background: white; border: 1px solid #B5D4F4; border-radius: 12px; padding: 20px 28px; text-align: center; min-width: 180px; }
+    .stat-card .num { font-size: 32px; font-weight: 700; color: #185FA5; }
+    .stat-card .lbl { font-size: 12px; color: #378ADD; margin-top: 4px; }
+
+    /* FEATURES */
+    .features { padding: 64px 48px; background: #fff; }
+    .section-tag { font-size: 12px; color: #185FA5; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px; }
+    .section-heading { font-size: 26px; font-weight: 700; color: #1a1a1a; margin-bottom: 36px; }
+    .feat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+    .feat-card { background: #f9fafb; border-radius: 12px; padding: 24px 20px; border: 1px solid #e5e7eb; }
+    .feat-icon { width: 40px; height: 40px; border-radius: 10px; background: #E6F1FB; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+    .feat-icon svg { width: 20px; height: 20px; stroke: #185FA5; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .feat-card h3 { font-size: 15px; font-weight: 600; color: #1a1a1a; margin-bottom: 8px; }
+    .feat-card p { font-size: 13px; color: #666; line-height: 1.65; }
+
+    /* PROCESS */
+    .process { padding: 64px 48px; background: #f9fafb; }
+    .steps { display: flex; gap: 0; margin-top: 32px; }
+    .step { flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; position: relative; padding: 0 12px; }
+    .step:not(:last-child)::after { content: ''; position: absolute; top: 16px; left: 50%; width: 100%; height: 1px; background: #B5D4F4; z-index: 0; }
+    .step-num { width: 36px; height: 36px; border-radius: 50%; background: #185FA5; color: white; font-size: 15px; font-weight: 600; display: flex; align-items: center; justify-content: center; z-index: 1; flex-shrink: 0; }
+    .step h4 { font-size: 14px; font-weight: 600; margin-top: 12px; color: #1a1a1a; }
+    .step p { font-size: 13px; color: #666; margin-top: 6px; line-height: 1.55; }
+
+    /* ABOUT */
+    .about { padding: 64px 48px; background: #fff; display: flex; gap: 60px; align-items: flex-start; }
+    .about-text { flex: 1; }
+    .about-text p { font-size: 14px; color: #555; line-height: 1.8; margin-bottom: 14px; }
+    .about-highlights { flex: 0 0 220px; display: flex; flex-direction: column; gap: 12px; }
+    .highlight { background: #E6F1FB; border-radius: 10px; padding: 14px 16px; border-left: 3px solid #185FA5; }
+    .highlight strong { font-size: 14px; font-weight: 600; color: #042C53; display: block; margin-bottom: 2px; }
+    .highlight span { font-size: 12px; color: #185FA5; }
+
+    /* CTA */
+    .cta-bar { background: #185FA5; padding: 56px 48px; text-align: center; }
+    .cta-bar h2 { font-size: 26px; font-weight: 700; color: white; margin-bottom: 10px; }
+    .cta-bar p { font-size: 15px; color: #85B7EB; margin-bottom: 28px; }
+    .cta-bar a { color: #85B7EB; }
+    .btn-white { background: white; color: #185FA5; border: none; border-radius: 8px; padding: 13px 32px; font-size: 15px; font-weight: 600; cursor: pointer; }
+    .btn-white:hover { background: #E6F1FB; }
+    .cta-email { margin-top: 16px; font-size: 13px; }
+
+    /* FOOTER */
+    footer { background: #042C53; padding: 28px 48px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+    .footer-brand { font-size: 14px; color: #85B7EB; font-weight: 500; }
+    .footer-links { display: flex; gap: 24px; list-style: none; }
+    .footer-links a { font-size: 13px; color: #378ADD; text-decoration: none; }
+    .footer-links a:hover { color: #85B7EB; }
+    .footer-copy { font-size: 12px; color: #378ADD; }
+
+    @media (max-width: 768px) {
+      nav { padding: 12px 20px; }
+      .nav-links { display: none; }
+      .hero { flex-direction: column; padding: 40px 20px; }
+      .hero-stats { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+      .feat-grid { grid-template-columns: 1fr 1fr; }
+      .steps { flex-direction: column; align-items: flex-start; gap: 20px; }
+      .step::after { display: none; }
+      .about { flex-direction: column; padding: 40px 20px; }
+      .about-highlights { flex: unset; width: 100%; }
+      footer { flex-direction: column; align-items: flex-start; padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4" fill="#B5D4F4"/></svg>
+      </div>
+      <span class="nav-brand"><span>Transition</span> Metals</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <button class="nav-cta" onclick="document.querySelector('.cta-bar').scrollIntoView({behavior:'smooth'})">Get a quote</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <div class="hero-badge">Serving U.S. &amp; Puerto Rico since 2009</div>
+      <h1>Professional mutilated coin &amp; off-sort redemption</h1>
+      <p>Helping businesses recover full value from damaged and off-sort coin — with free shipping, fast payment, and detailed reporting.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="document.querySelector('.cta-bar').scrollIntoView({behavior:'smooth'})">Get started</button>
+        <button class="btn-outline" onclick="document.querySelector('.about').scrollIntoView({behavior:'smooth'})">Learn more</button>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div class="num">15+</div>
+        <div class="lbl">Years in business</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">10</div>
+        <div class="lbl">Day avg. turnaround</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">3</div>
+        <div class="lbl">Payment options</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="section-tag">Why choose us</div>
+    <div class="section-heading">Everything you need in one program</div>
+    <div class="feat-grid">
+      <div class="feat-card">
+        <div class="feat-icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+        </div>
+        <h3>Custom reporting</h3>
+        <p>Monthly recaps, consolidated details, and summary reports tailored to your business needs.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <h3>Free shipping</h3>
+        <p>No-cost shipping for corporate customers across the entire U.S. and Puerto Rico.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3>Fast payment</h3>
+        <p>Most shipments are processed and ready for payment within 10 business days.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>High volume capacity</h3>
+        <p>Automated processes ensure accurate, timely handling at any scale of volume.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process">
+    <div class="section-tag">How it works</div>
+    <div class="section-heading">Simple four-step process</div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>Contact us</h4>
+        <p>Reach out to set up your account and discuss your volume needs.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>Ship your coin</h4>
+        <p>We provide free prepaid shipping labels for all corporate clients.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>We process</h4>
+        <p>Automated sorting and counting with a complete audit trail.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h4>Get paid</h4>
+        <p>Choose from three payment options — most within 10 business days.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="about-text">
+      <div class="section-tag">About us</div>
+      <div class="section-heading">Meet Transition Metals</div>
+      <p>Since 2009, Transition Metals, LLC has redefined how the coin industry accounts for and processes off-sort and mutilated coins. We bring professionalism, integrity, and cutting-edge automation to every shipment we handle.</p>
+      <p>Our unique management reporting and automated tracking processes are second to none. Our customers consistently report excellent loss recovery rates, backed by transparent reporting and a process you can trust.</p>
+      <p>We offer free shipping, competitive pricing, management reporting, and three options for processing and payment — making it easy for businesses of any size to recover full coin value.</p>
+    </div>
+    <div class="about-highlights">
+      <div class="highlight">
+        <strong>Founded 2009</strong>
+        <span>Over 15 years of expertise</span>
+      </div>
+      <div class="highlight">
+        <strong>3 payment options</strong>
+        <span>Flexible terms for every client</span>
+      </div>
+      <div class="highlight">
+        <strong>Integrity-first</strong>
+        <span>Full audit trails &amp; reporting</span>
+      </div>
+      <div class="highlight">
+        <strong>Nationwide service</strong>
+        <span>U.S. &amp; Puerto Rico coverage</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-bar">
+    <h2>Ready to recover your coin losses?</h2>
+    <p>Contact us today to set up your corporate redemption program. No minimums to get started.</p>
+    <button class="btn-white">Contact Transition Metals</button>
+    <p class="cta-email">Or email us directly at <a href="mailto:coin@offsorts.com">coin@offsorts.com</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">Transition Metals, LLC</div>
+    <ul class="footer-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="footer-copy">© 2026 Transition Metals, LLC</div>
+  </footer>
+
+</body>
+</html>
