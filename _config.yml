@@ -1,0 +1,9 @@
+title: Transition Metals
+description: Professional Mutilated Coin and Off-Sort Redemption
+baseurl: "/Coin757"
+url: "https://hortermann.github.io"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
